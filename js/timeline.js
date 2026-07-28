@@ -17,7 +17,7 @@ document.querySelectorAll(".card");
 // HIỆU ỨNG KHI CUỘN
 // ===============================
 
-
+let timelineCreated = false ;
 function timelineReveal(){
 
 
@@ -42,28 +42,21 @@ card.classList.add("show");
 
 
 
-if(index===0){
+if (!timelineCreated) {
+
+    timelineCreated = true;
 
     createTimelineMessage(
-        "👶 Một tuổi",
-        "Ngày ấy em là một cô bé nhỏ xíu với nụ cười trong veo. Những khoảnh khắc ngây thơ ấy đã trở thành những kỷ niệm thật đẹp."
+        "🐣 Một tuổi",
+        "Ngày ấy em là một cô bé nhỏ xíu với nụ cười trong veo. Những khoảnh khắc ngày thơ ấy đã trở thành những kỷ niệm thật đẹp."
     );
-
-
-}
-
-
-
-if(index===1){
 
     createTimelineMessage(
         "🎂 Tuổi 19",
         "18 năm trôi qua thật nhanh. Từ cô bé ngày nào, em đã trở thành một cô gái xinh đẹp, mạnh mẽ và đầy ước mơ."
     );
 
-
 }
-
 
 
 }
