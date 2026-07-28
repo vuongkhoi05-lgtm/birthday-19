@@ -1,0 +1,488 @@
+/* ==========================================
+   RESPONSIVE MOBILE - TABLET - DESKTOP
+========================================== */
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:1024px){
+
+
+section{
+
+    padding:80px 5%;
+
+}
+
+
+.hero h1{
+
+    font-size:70px;
+
+}
+
+
+.hero h2{
+
+    font-size:38px;
+
+}
+
+
+h2{
+
+    font-size:35px;
+
+}
+
+
+/* Countdown */
+
+.box{
+
+    width:130px;
+
+    height:130px;
+
+}
+
+
+.box span{
+
+    font-size:45px;
+
+}
+
+
+/* Timeline */
+
+.timeline{
+
+    flex-direction:column;
+
+}
+
+
+.line{
+
+    width:5px;
+
+    height:120px;
+
+}
+
+
+.card{
+
+    width:90%;
+
+}
+
+
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:768px){
+
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+
+/* Section */
+
+section{
+
+    padding:
+
+    70px 20px;
+
+}
+
+
+
+/* Hero */
+
+
+.hero h3{
+
+    font-size:20px;
+
+}
+
+
+.hero h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+}
+
+
+.hero h2{
+
+    font-size:32px;
+
+}
+
+
+
+.hero p{
+
+    font-size:16px;
+
+    padding:0 10px;
+
+}
+
+
+/* Button */
+
+
+button{
+
+    padding:
+
+    12px 30px;
+
+    font-size:16px;
+
+}
+
+
+
+/* Title */
+
+
+h2{
+
+    font-size:30px;
+
+}
+
+
+h3{
+
+    font-size:24px;
+
+}
+
+
+/* Countdown */
+
+
+.timer{
+
+    gap:15px;
+
+}
+
+
+.box{
+
+    width:80px;
+
+    height:90px;
+
+    border-radius:18px;
+
+}
+
+
+.box span{
+
+    font-size:30px;
+
+}
+
+
+.box p{
+
+    font-size:12px;
+
+}
+
+
+
+/* Timeline */
+
+
+.timeline{
+
+    gap:20px;
+
+}
+
+
+
+.card{
+
+    min-width:100%;
+
+    padding:20px;
+
+}
+
+
+
+.card img{
+
+    height:300px;
+
+}
+
+
+
+/* Timeline Line */
+
+
+.line{
+
+    height:80px;
+
+}
+
+
+
+/* Letter */
+
+
+.envelope{
+
+    padding:25px 15px;
+
+}
+
+
+
+#letterContent{
+
+    font-size:16px;
+
+}
+
+
+/* Gallery */
+
+
+.gallery{
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+    gap:10px;
+
+}
+
+
+
+.gallery img{
+
+    height:160px;
+
+}
+
+
+
+/* Cake */
+
+
+.cake img{
+
+    width:240px;
+
+}
+
+
+
+/* Ending */
+
+
+#ending h1{
+
+    font-size:55px;
+
+}
+
+
+#ending p{
+
+    font-size:17px;
+
+}
+
+
+/* Music button */
+
+
+#musicBtn{
+
+    width:55px;
+
+    height:55px;
+
+    right:15px;
+
+    bottom:15px;
+
+    font-size:22px;
+
+}
+
+
+
+}
+
+
+
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+
+@media(max-width:420px){
+
+
+
+.hero h1{
+
+    font-size:45px;
+
+}
+
+
+
+.hero h2{
+
+    font-size:27px;
+
+}
+
+
+
+.timer{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+}
+
+
+
+.box{
+
+    width:100%;
+
+}
+
+
+
+.gallery{
+
+    grid-template-columns:
+
+    1fr;
+
+}
+
+
+
+.card img{
+
+    height:250px;
+
+}
+
+
+}
+
+
+/* =========================
+   LANDSCAPE PHONE
+========================= */
+
+
+@media(max-height:500px)
+and (orientation:landscape){
+
+
+
+.hero{
+
+    min-height:700px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:45px;
+
+}
+
+
+
+section{
+
+    padding-top:50px;
+
+}
+
+
+
+}
+
+
+/* =========================
+   LARGE SCREEN
+========================= */
+
+
+@media(min-width:1400px){
+
+
+section{
+
+    padding-left:15%;
+
+    padding-right:15%;
+
+}
+
+
+
+.hero h1{
+
+    font-size:110px;
+
+}
+
+
+.card img{
+
+    height:450px;
+
+}
+
+
+}

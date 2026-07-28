@@ -1,0 +1,755 @@
+/* ==========================================
+   GLOBAL ANIMATIONS
+========================================== */
+
+/* Fade xuất hiện */
+.fade-in{
+    animation:fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* Zoom xuất hiện */
+.zoom-in{
+
+    animation:zoomIn 1.5s ease forwards;
+
+}
+
+@keyframes zoomIn{
+
+    from{
+        opacity:0;
+        transform:scale(.5);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+
+/* Trượt từ trái */
+
+.slide-left{
+
+    animation:slideLeft 1.2s ease forwards;
+
+}
+
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-100px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+
+/* Trượt từ phải */
+
+.slide-right{
+
+    animation:slideRight 1.2s ease forwards;
+
+}
+
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(100px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+
+/* ==========================================
+   GALAXY EFFECT
+========================================== */
+
+
+@keyframes twinkle{
+
+
+    0%,100%{
+
+        opacity:.3;
+
+        transform:scale(1);
+
+    }
+
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.8);
+
+    }
+
+}
+
+
+
+@keyframes twinkleBig{
+
+
+    0%,100%{
+
+        transform:scale(1);
+
+        opacity:.5;
+
+    }
+
+
+    50%{
+
+        transform:scale(2);
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+@keyframes nebulaOne{
+
+
+    0%{
+
+        transform:translate(0,0);
+
+    }
+
+
+    50%{
+
+        transform:translate(100px,80px);
+
+    }
+
+
+    100%{
+
+        transform:translate(0,0);
+
+    }
+
+}
+
+
+
+@keyframes nebulaTwo{
+
+
+    0%{
+
+        transform:translate(0,0);
+
+    }
+
+
+    50%{
+
+        transform:translate(-120px,-70px);
+
+    }
+
+
+    100%{
+
+        transform:translate(0,0);
+
+    }
+
+}
+
+
+
+/* ==========================================
+   METEOR
+========================================== */
+
+
+@keyframes meteorMove{
+
+
+    0%{
+
+        transform:
+
+        translate(0,0)
+
+        rotate(-45deg);
+
+        opacity:0;
+
+    }
+
+
+    20%{
+
+        opacity:1;
+
+    }
+
+
+    100%{
+
+        transform:
+
+        translate(-700px,700px)
+
+        rotate(-45deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+/* ==========================================
+   FIREFLY
+========================================== */
+
+
+@keyframes fireflyFloat{
+
+
+    0%{
+
+        transform:
+
+        translate(0,0);
+
+        opacity:.3;
+
+    }
+
+
+    25%{
+
+        transform:
+
+        translate(40px,-80px);
+
+        opacity:1;
+
+    }
+
+
+    50%{
+
+        transform:
+
+        translate(-30px,-150px);
+
+        opacity:.6;
+
+    }
+
+
+    75%{
+
+        transform:
+
+        translate(60px,-220px);
+
+        opacity:1;
+
+    }
+
+
+    100%{
+
+        transform:
+
+        translate(0,-300px);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+
+/* ==========================================
+   GALAXY PULSE
+========================================== */
+
+
+@keyframes galaxyPulse{
+
+
+    0%,100%{
+
+        transform:scale(1);
+
+        opacity:.5;
+
+    }
+
+
+    50%{
+
+        transform:scale(1.4);
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+/* ==========================================
+   PARTICLE FLOAT
+========================================== */
+
+
+@keyframes particleFloat{
+
+
+    from{
+
+        transform:
+
+        translateY(100vh);
+
+        opacity:0;
+
+    }
+
+
+    20%{
+
+        opacity:1;
+
+    }
+
+
+    to{
+
+        transform:
+
+        translateY(-120vh);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+/* ==========================================
+   AURORA
+========================================== */
+
+
+@keyframes auroraMove{
+
+
+    0%{
+
+        transform:
+
+        translateX(-50%)
+
+        translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:
+
+        translateX(-40%)
+
+        translateY(80px);
+
+    }
+
+
+    100%{
+
+        transform:
+
+        translateX(-50%)
+
+        translateY(0);
+
+    }
+
+}
+
+
+
+/* ==========================================
+   BUTTON EFFECT
+========================================== */
+
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+
+@keyframes pulse{
+
+
+    0%{
+
+        box-shadow:
+
+        0 0 0 0
+
+        rgba(168,85,247,.7);
+
+    }
+
+
+    70%{
+
+        box-shadow:
+
+        0 0 0 30px
+
+        rgba(168,85,247,0);
+
+    }
+
+
+    100%{
+
+        box-shadow:
+
+        0 0 0 0
+
+        rgba(168,85,247,0);
+
+    }
+
+}
+
+
+
+/* ==========================================
+   HEART FLOAT
+========================================== */
+
+
+.heart{
+
+
+position:absolute;
+
+color:#ff4d6d;
+
+font-size:25px;
+
+animation:heartFloat 5s linear infinite;
+
+
+}
+
+
+@keyframes heartFloat{
+
+
+0%{
+
+transform:
+
+translateY(0)
+
+scale(1);
+
+opacity:1;
+
+}
+
+
+100%{
+
+transform:
+
+translateY(-500px)
+
+scale(1.8);
+
+opacity:0;
+
+}
+
+
+}
+
+
+
+/* ==========================================
+   LETTER OPEN
+========================================== */
+
+
+.open-letter{
+
+animation:
+
+letterOpen 1s ease forwards;
+
+}
+
+
+
+@keyframes letterOpen{
+
+
+from{
+
+transform:
+
+translateY(50px)
+
+rotateX(90deg);
+
+opacity:0;
+
+}
+
+
+to{
+
+transform:
+
+translateY(0)
+
+rotateX(0);
+
+opacity:1;
+
+}
+
+
+}
+
+
+
+/* ==========================================
+   CAKE SHAKE
+========================================== */
+
+
+.cake-shake{
+
+animation:cakeShake .8s infinite;
+
+}
+
+
+@keyframes cakeShake{
+
+
+0%,100%{
+
+transform:rotate(0);
+
+}
+
+
+25%{
+
+transform:rotate(5deg);
+
+}
+
+
+75%{
+
+transform:rotate(-5deg);
+
+}
+
+
+}
+
+
+
+/* ==========================================
+   FIREWORK FLASH
+========================================== */
+
+
+.firework-flash{
+
+animation:
+
+flash .8s ease;
+
+}
+
+
+@keyframes flash{
+
+
+0%{
+
+opacity:0;
+
+}
+
+
+50%{
+
+opacity:1;
+
+}
+
+
+100%{
+
+opacity:0;
+
+}
+
+
+}
+
+
+/* ==========================================
+   TYPE EFFECT
+========================================== */
+
+
+.typing{
+
+overflow:hidden;
+
+white-space:nowrap;
+
+border-right:3px solid white;
+
+animation:
+
+typing 4s steps(40),
+
+cursor .7s infinite;
+
+}
+
+
+@keyframes typing{
+
+
+from{
+
+width:0;
+
+}
+
+
+to{
+
+width:100%;
+
+}
+
+}
+
+
+
+@keyframes cursor{
+
+
+50%{
+
+border-color:transparent;
+
+}
+
+}
+
+
+/* ==========================================
+   FLOATING
+========================================== */
+
+
+.float{
+
+animation:
+
+float 4s ease-in-out infinite;
+
+}
+
+
+@keyframes float{
+
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+}

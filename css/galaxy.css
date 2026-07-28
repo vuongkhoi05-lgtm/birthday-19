@@ -1,0 +1,367 @@
+/* ==========================================
+   GALAXY BACKGROUND
+========================================== */
+
+#galaxy{
+    position:fixed;
+    inset:0;
+    z-index:-999;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at top,#1e1b4b 0%,#050816 45%,#02030d 100%);
+}
+
+#stars{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+/* ==========================================
+   NEBULA
+========================================== */
+
+#galaxy::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    left:-180px;
+    top:-180px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(circle,
+        rgba(168,85,247,.30),
+        transparent 70%);
+
+    filter:blur(70px);
+
+    animation:nebulaOne 14s ease-in-out infinite;
+
+}
+
+#galaxy::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    right:-150px;
+    bottom:-150px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(circle,
+        rgba(59,130,246,.25),
+        transparent 70%);
+
+    filter:blur(80px);
+
+    animation:nebulaTwo 18s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   STAR LAYER
+========================================== */
+
+.star{
+
+    position:absolute;
+
+    width:3px;
+    height:3px;
+
+    background:white;
+
+    border-radius:50%;
+
+    box-shadow:
+
+    0 0 8px white,
+
+    0 0 15px white;
+
+    animation:twinkle 3s infinite;
+
+}
+
+/* ==========================================
+   BIG STARS
+========================================== */
+
+.big-star{
+
+    position:absolute;
+
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    box-shadow:
+
+    0 0 15px white,
+
+    0 0 35px #60a5fa,
+
+    0 0 60px #a855f7;
+
+    animation:twinkleBig 4s infinite;
+
+}
+
+/* ==========================================
+   METEOR
+========================================== */
+
+.meteor{
+
+    position:absolute;
+
+    width:220px;
+
+    height:2px;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    white,
+
+    transparent
+
+    );
+
+    transform:rotate(-45deg);
+
+    box-shadow:
+
+    0 0 20px white;
+
+    animation:
+
+    meteorMove 5s linear infinite;
+
+}
+
+/* ==========================================
+   FIREFLY
+========================================== */
+
+.firefly{
+
+    position:absolute;
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:#ffe66d;
+
+    box-shadow:
+
+    0 0 15px #ffe66d,
+
+    0 0 30px #ffe66d,
+
+    0 0 50px #ffd43b;
+
+    animation:
+
+    fireflyFloat 7s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   GALAXY GLOW
+========================================== */
+
+.galaxy-light{
+
+    position:absolute;
+
+    width:400px;
+    height:400px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle,
+
+    rgba(147,51,234,.20),
+
+    transparent);
+
+    filter:blur(70px);
+
+    animation:
+
+    galaxyPulse 10s infinite;
+
+}
+
+/* ==========================================
+   MOON
+========================================== */
+
+.moon{
+
+    position:absolute;
+
+    right:8%;
+
+    top:8%;
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle at 30% 30%,
+
+    #ffffff,
+
+    #dbeafe,
+
+    #94a3b8);
+
+    box-shadow:
+
+    0 0 50px white,
+
+    0 0 120px rgba(255,255,255,.5);
+
+}
+
+/* ==========================================
+   PARTICLES
+========================================== */
+
+.particle{
+
+    position:absolute;
+
+    width:2px;
+    height:2px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    opacity:.6;
+
+    animation:
+
+    particleFloat 8s linear infinite;
+
+}
+
+/* ==========================================
+   AURORA
+========================================== */
+
+.aurora{
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    transform:translateX(-50%);
+
+    width:900px;
+
+    height:250px;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    rgba(168,85,247,.15),
+
+    rgba(59,130,246,.18),
+
+    rgba(34,197,94,.15)
+
+    );
+
+    filter:blur(90px);
+
+    animation:
+
+    auroraMove 12s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   GALAXY OVERLAY
+========================================== */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+
+    circle,
+
+    transparent 40%,
+
+    rgba(0,0,0,.25)
+
+    );
+
+}
+
+/* ==========================================
+   EXTRA GLOW
+========================================== */
+
+.glow-circle{
+
+    position:absolute;
+
+    width:25px;
+
+    height:25px;
+
+    border-radius:50%;
+
+    background:#a855f7;
+
+    filter:blur(15px);
+
+    opacity:.4;
+
+    animation:
+
+    glowMove 12s infinite;
+
+}
