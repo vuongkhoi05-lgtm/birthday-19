@@ -658,3 +658,47 @@ left:-80px;
 right:-80px;
 
 }
+/* ================================
+   MEMORY POPUP
+================================ */
+
+.memory-popup{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 340px;
+    background: rgba(20,20,40,.95);
+    color:#fff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 25px rgba(255,255,255,.25);
+    z-index:999999;
+    animation: popupShow .6s ease;
+}
+
+.memory-popup h3{
+    color:#ffd86b;
+    margin-bottom:10px;
+}
+
+.memory-popup.hide{
+    animation: popupHide .6s forwards;
+}
+
+@keyframes popupShow{
+    from{
+        opacity:0;
+        transform:translateX(100px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes popupHide{
+    to{
+        opacity:0;
+        transform:translateX(100px);
+    }
+}
